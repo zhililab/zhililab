@@ -1,4 +1,4 @@
-![Github Stats](https://github-readme-stats.vercel.app/api?username=zhililab)
+![Github Stats](https://github-readme-stats-sigma-five.vercel.app/api?username=zhililab)
 
 ### Hi there 👋
 
