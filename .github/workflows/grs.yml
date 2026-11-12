@@ -27,7 +27,13 @@ jobs:
           card: stats
           options: username=${{ github.repository_owner }}&show_icons=true
           path: profile/stats.svg
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.PROFILE_STATS_TOKEN }}
+      - name: Validate generated card
+        run: |
+          if grep -Eq 'Something went wrong|data-testid="message"' profile/stats.svg; then
+            echo "Stats generation returned an error."
+            exit 1
+          fi
       - name: Commit updated card
         run: |
           git config user.name "github-actions[bot]"
