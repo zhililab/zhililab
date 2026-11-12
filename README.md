@@ -1,4 +1,4 @@
-![Github Stats](https://github-readme-stats-sigma-five.vercel.app/api?username=zhililab)
+![GitHub Stats](./profile/stats.svg)
 
 ### Hi there 👋
 
